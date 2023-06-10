@@ -8,6 +8,22 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.fade-in-ayubowan
+{
+  opacity: 0; /* Hide the text initially */
+  animation: slide-in 2s ease-in-out infinite alternate;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 body {
   background-color: #02152f;
   font-family: "Open Sans", sans-serif;
